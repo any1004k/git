@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="org.zerock.mapper.Member1Mapper">
+  
+  
+  <select id="getMemberInfo" resultType="org.zerock.domain.Member1VO">
+  
+  select * from jang_member where id=#{id} and password=#{password}
+   
+  </select>
+  
+  
+  <select id="checkId" resultType="int">
+  
+   select count(*) from jang_member where id=#{checkId}
+   
+  </select>
+  
+  
+  <insert id="memberRegister">
+  
+   insert into jang_member values (#{id},#{password},#{phone},#{email},#{gender},#{name},#{birth_year},#{birth_month},#{birth_day})
+  
+  </insert>
+  
+  
+  
+  
+  
+
+  
+  </mapper>

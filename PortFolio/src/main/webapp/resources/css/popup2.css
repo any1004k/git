@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+ /*perid-layer*/
+.perid-layer {
+    CLEAR: both;
+    font-size: 12px;
+    BORDER-RIGHT: #b6b6b6 1px solid;
+    BORDER-TOP: #b6b6b6 1px solid;
+    OVERFLOW: hidden;
+    BORDER-LEFT: #b6b6b6 1px solid;
+    BORDER-BOTTOM: #b6b6b6 1px solid;
+    BACKGROUND-COLOR: #fff
+}
+
+.perid-layer UL {
+    MARGIN: 0px;
+    OVERFLOW: hidden;
+    WIDTH: 100%
+}
+
+.perid-layer LI {
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    VERTICAL-ALIGN: top;
+    WIDTH: 100%;
+    PADDING-TOP: 0px;
+    HEIGHT: 29px
+}
+
+.perid-layer LI.line {
+    BACKGROUND: url(http://coder.nhndesign.com/UII/Naver_community/cafe/front_sub/img-common/layer-line.gif) repeat-x 0px 100%;
+    OVERFLOW: hidden
+}
+
+.perid-layer LI A {
+    BORDER-RIGHT: #fff 1px solid;
+    BORDER-TOP: #fff 1px solid;
+    FLOAT: left;
+    BORDER-LEFT: #fff 1px solid;
+    WIDTH: 100%;
+    COLOR: #000000;
+    BORDER-BOTTOM: #fff 1px solid;
+    HEIGHT: 26px
+}
+
+.perid-layer LI SPAN {
+    PADDING-LEFT: 11px;
+    FLOAT: left;
+    PADDING-TOP: 6px
+}
+
+.perid-layer LI A:hover {
+    BACKGROUND-COLOR: #e4ff75;
+    TEXT-DECORATION: none
+}

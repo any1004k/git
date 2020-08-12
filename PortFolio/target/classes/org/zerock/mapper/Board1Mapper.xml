@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="org.zerock.mapper.Board1Mapper">
+  
+<sql id="criteria">
+  	<trim prefixOverrides="or" prefix="and(" suffix=")">
+  		<foreach item="type" collection="typeArray">
+  			<trim prefix="or">
+  				<choose>
+					<when test="type=='T'.toString()">
+						title like concat('%',#{keyword},'%')
+					</when>
+					
+					<when test="type=='C'.toString()">
+						content like concat('%',#{keyword},'%')
+					</when>
+					
+					<when test="type='W'.toString()">
+						id like concat("%",#{keyword},"%")
+					</when> 					 				
+  				</choose>
+  			</trim>  		
+  		</foreach>  	
+  	</trim> 
+  </sql>
+  
+  
+  
+  
+  
+  
+  <select id ="getList" resultType="org.zerock.domain.Board1VO">
+   <![CDATA[
+  	select * 
+  	from(
+	  	select @rownum:=@rownum+1 as rownum, j.*
+	  	from(select @rownum:=0)as tmp, jang_damso j
+	  	where 1=1
+	 ]]> 	
+	  	<include refid="criteria"></include>
+	  	
+	 <![CDATA[
+	  	order by bno desc
+	  	) list
+  	 where rownum>=(#{pageNum}*#{amount}-9) and rownum <=(#{pageNum}*#{amount})	 	 
+    ]]>
+  </select>
+  
+  
+  
+  <select id="getTotalCount" resultType="int">
+  <![CDATA[
+    select count(*) from jang_damso where bno>0
+    ]]>
+  </select>
+  
+  <select id="getBnoRank_List1" resultType="org.zerock.domain.Board1VO">
+    <![CDATA[
+  	select j.*
+	from(
+	select @rownum:=@rownum+1 ranking, b.*
+	from jang_damso b
+	where ( @rownum:=0)=0  
+	order by replycnt desc
+	) j
+	where ranking>=1 and ranking<=10
+      ]]>
+  </select>
+  
+  
+ <select id="getBnoRank_List2" resultType="org.zerock.domain.Board1VO">
+    <![CDATA[
+  	select j.*
+	from(
+	select @rownum:=@rownum+1 ranking, b.*
+	from jang_damso2 b
+	where ( @rownum:=0)=0  
+	order by replycnt desc
+	) j
+	where ranking>=1 and ranking<=10
+      ]]>
+  </select>
+ 
+ 
+ 
+  
+  <insert id="insertSelectKey"> 
+   <selectKey resultType="int" keyProperty="bno" order="BEFORE">
+        select MAX(bno)+1 FROM jang_damso        
+    </selectKey>   
+  	insert jang_damso (bno, title, content, id) values(#{bno}, #{title}, #{content},#{id})
+  </insert>
+  
+  
+  
+  <select id="getTuple" resultType="org.zerock.domain.Board1VO">
+    select * from jang_damso where bno=#{ibno} 
+  </select>
+  
+  <update id="updateReplyCnt">
+  update jang_damso 
+  set replycnt=(select count(rno) from jang_damso_reply where jang_damso.bno= jang_damso_reply.bno)+#{amount}
+  where bno = #{bno}
+  </update>
+  
+  <delete id="delete">
+   delete from jang_damso where bno=#{bnoi}
+  
+  </delete>
+
+
+  
+<update id="update">  
+    update jang_damso set title=#{title}, content=#{content} where bno=#{bno}
+    
+ </update>
+  
+  
+  </mapper>

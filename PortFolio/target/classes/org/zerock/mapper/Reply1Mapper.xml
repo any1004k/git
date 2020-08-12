@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="org.zerock.mapper.Reply1Mapper">
+  
+
+
+ <!-- 해당 게시물의 특정 페이지 댓글 가져오기.-->
+<select id="getReplyList" resultType="org.zerock.domain.Reply1VO">
+	<![CDATA[
+	select *
+	from(
+		select @rownum:=@rownum+1 as rownum, j.*
+		from (select @rownum:=0) as tmp, jang_damso_reply j
+		where bno = #{bno}
+        order by rno desc
+        ) jang
+       where rownum>(#{cri.pageNum}-1)*#{cri.amount} and rownum<=#{cri.pageNum}*#{cri.amount}
+    ]]>   
+
+</select>
+
+
+ <!-- 해당 게시물 전체 댓글 수.-->
+ <select id = "count" resultType="int">
+		select count(*) from jang_damso_reply where bno = #{bno}
+ </select>
+
+
+<!--   댓글 등록 -->
+  <insert id="addReply" > 	
+  	insert into jang_damso_reply(bno,reply,id)
+  	values(#{bno},#{reply}, #{id})
+  </insert>
+  
+  
+  
+  <!--   댓글 수정 -->
+  <update id="updateReply">
+  	update jang_damso_reply
+  	set reply=#{reply}, updatedate=sysdate()
+  	where rno=#{rno}  
+  </update>
+
+  
+  
+   <!--   댓글 수정대상 가져오기-->
+  <select id="getReplyTuple" resultType="org.zerock.domain.Reply1VO">
+  	select *
+  	from jang_damso_reply
+  	where rno=#{rno}
+  
+  </select>
+    
+  <!--   댓글 삭제 -->
+  <delete id="removeReply" >
+  	delete from jang_damso_reply
+  	where rno=#{rno}
+  
+  </delete>
+  
+
+  </mapper>

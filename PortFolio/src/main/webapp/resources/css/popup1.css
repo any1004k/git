@@ -1,0 +1,1129 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0
+}
+
+img {
+    border: none
+}
+
+form {
+    margin: 0;
+    padding: 0
+}
+
+P {
+    margin-top: 2px;
+    margin-bottom: 2px
+}
+
+#o {
+    color: #FF7635
+}
+
+/*navyblue*/
+.bl {
+    color: #315592
+}
+
+a.bl:link {
+    color: #315592;
+    text-decoration: none
+}
+
+a.bl:visited {
+    color: #315592;
+    text-decoration: none
+}
+
+a.bl:hover {
+    color: #000000;
+    text-decoration: underline
+}
+
+/*gray*/
+.gr {
+    color: #616161
+}
+
+a.gr:link {
+    color: #616161;
+    text-decoration: none
+}
+
+a.gr:visited {
+    color: #616161;
+    text-decoration: none
+}
+
+a.gr:hover {
+    color: #616161;
+    text-decoration: underline
+}
+
+.ln16, a.ln16:link, a.ln16:visited, a.ln16:hover, a.ln16:active {
+    line-height: 1.6
+}
+
+.ln17, a.ln17:link, a.ln17:visited, a.ln17:hover, a.ln17:active {
+    line-height: 1.7
+}
+
+.ln18, a.ln18:link, a.ln18:visited, a.ln18:hover, a.ln18:active {
+    line-height: 1.8
+}
+
+.ubox {
+    font-size: 9px;
+    font-family: "verdana", "arial";
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #C4CAD1;
+    color: #000000;
+    height: 18px;
+    padding: 2px 0 0 3px
+}
+
+.eng2 {
+    color: #666666;
+    font-family: "돋움", "arial";
+    font-size: 11px;
+}
+
+.englink {
+    color: #666666;
+    font-family: "verdana", "arial";
+    font-size: 10px;
+}
+
+.small {
+    color: #404040;
+    font-family: "verdana", "arial";
+    font-size: 9px;
+}
+
+.view {
+    text-align: justify
+}
+
+.b, a.b:link, a.b:visited, a.b:hover, a.b:active {
+    font-weight: bold;
+    letter-spacing: -1px
+}
+
+.u, a.u:link, a.u:visited, a.u:hover, a.u:active {
+    text-decoration: underline
+}
+
+.p13, a.p13:link, a.p13:visited, a.p13:hover, a.p13:active {
+    font-size: 13px
+}
+
+.Pt {
+    font-family: "돋움";
+    color: #666666;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: -0.04em;
+}
+
+.Pt3 {
+    font-family: "돋움";
+    color: #333333;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: -0.04em;
+}
+
+.eng, a.eng:link, a.eng:visited, a.eng:hover, a.eng:active {
+    color: #666666;
+    font-family: verdana, arial;
+    font-size: 9px;
+    margin-top: -3px
+}
+
+.page, a.page:link, a.page:visited, a.page:hover, a.page:active {
+    color: #666666;
+    font-family: "굴림", arial;
+    font-size: 11px;
+}
+
+.url, a.url:link, a.url:visited, a.url:hover, a.url:active {
+    font-family: verdana, arial;
+    font-size: 11px;
+}
+
+.V {
+    font-family: "verdana", "arial";
+    font-size: 9px;
+    font-weight: bold;
+    color: #535353;
+    letter-spacing: 0
+}
+
+.V_g {
+    font-family: "verdana", "arial";
+    font-size: 9px;
+    font-weight: bold;
+    color: #639933
+}
+
+.V_lg {
+    font-family: "verdana", "arial";
+    font-size: 9px;
+    font-weight: bold;
+    color: #ACACAC
+}
+
+.c, a.c:link, a.c:visited, a.c:hover, a.c:active {
+    color: #333333
+}
+
+/*black*/
+.w, a.w:link, a.w:visited, a.w:hover, a.w:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*White */
+.o, a.o:link, a.o:visited, a.o:hover, a.o:active {
+    color: #FF8400
+}
+
+/*orange*/
+.r, a.r:link, a.r:visited, a.r:hover, a.r:active {
+    color: #FF3600
+}
+
+/*red*/
+.g, a.g:link, a.g:visited, a.g:hover, a.g:active {
+    color: #333333
+}
+
+/*gray*/
+.al, a.al:link, a.al:visited, a.al:hover, a.al:active {
+    text-decoration: none;
+    color: #666666
+}
+
+/*Webzine Article */
+.pop_t {
+    background-color: #8F8F8F;
+    color: #ffffff;
+    font-weight: bold
+}
+
+.pop_t2 {
+    background-color: #81C247;
+    color: #ffffff;
+    font-weight: bold
+}
+
+.pop_b01 {
+    background-color: #F7F1E3;
+    text-align: center;
+    padding: 10px 0 7px 0
+}
+
+.pop_b02 {
+    background-color: #EFEFEF;
+    text-align: center;
+    padding: 5px 0 4px 0
+}
+
+.pop_b03 {
+    background-color: #FEF3DB;
+    padding: 5px 0 4px 0
+}
+
+.pop_b04 {
+    background-color: #F7F1E3;
+    text-align: center;
+    padding: 8px 0 5px 0
+}
+
+/* 상단공통UI */
+.naver_menu {
+    color: #333333;
+    text-decoration: none;
+    font-family: "굴림","seoul"
+}
+
+.naver_menu:link {
+    color: #333333;
+    text-decoration: none
+}
+
+.naver_menu:visited {
+    color: #333333;
+    text-decoration: none
+}
+
+.naver_menu:hover {
+    color: #999999;
+    text-decoration: underline
+}
+
+.s_link {
+    color: #1A3588;
+    text-decoration: underline
+}
+
+.s_link:link {
+    color: #1A3588;
+    text-decoration: underline
+}
+
+.s_link:visited {
+    color: #1A3588;
+    text-decoration: underline
+}
+
+.s_link:hover {
+    color: #5573CB;
+    text-decoration: underline
+}
+
+.s_link2 {
+    color: #1A3588;
+    text-decoration: none
+}
+
+.s_link2:link {
+    color: #1A3588;
+    text-decoration: none
+}
+
+.s_link2:visited {
+    color: #1A3588;
+    text-decoration: none
+}
+
+.s_link2:hover {
+    color: #5573CB;
+    text-decoration: underline
+}
+
+/* 컨탠츠 링크 */
+.con_link {
+    color: #0033CC;
+    text-decoration: underline
+}
+
+.con_link:link {
+    color: #0033CC;
+    text-decoration: underline
+}
+
+.con_link:visited {
+    color: #0033CC;
+    text-decoration: underline
+}
+
+.con_link:hover {
+    color: #5573CB;
+    text-decoration: underline
+}
+
+/*top_right_menuCSS*/
+.trc {
+    font-family: "굴림";
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none
+}
+
+a.trc:link {
+    font-family: "굴림";
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none
+}
+
+a.trc:visited {
+    font-family: "굴림";
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none
+}
+
+a.trc:active {
+    font-family: "굴림";
+    font-size: 12px;
+    color: #4DA500;
+    text-decoration: underline
+}
+
+a.trc:hover {
+    font-family: "굴림";
+    font-size: 12px;
+    color: #4DA500;
+    text-decoration: underline
+}
+
+.slink {
+    color: #FF3600;
+    font-weight: bold;
+    text-decoration: none
+}
+
+.slink:link {
+    color: #FF3600;
+    font-weight: bold;
+    text-decoration: underline
+}
+
+.slink:visited {
+    color: #FF3600;
+    font-weight: bold;
+    text-decoration: underline
+}
+
+.slink:hover {
+    color: #FF3600;
+    font-weight: bold;
+    text-decoration: none
+}
+
+.nav, a.nav:link, a.nav:active, a.nav:visited, a.nav:hover {
+    text-decoration: none;
+}
+
+.ndv {
+    background-color: #DDDDDD
+}
+
+td.navover {
+    background: #F7F7F7
+}
+
+/* black:#4A4A4A, gray:#444444, silver:#E0E0E0, white:#F7F7F7 */
+td.navout {
+    background: #FFFFFF
+}
+
+/* Skinset Core Colors */
+td {
+    color: #404040;
+    font-family: "돋움";
+    font-size: 12px;
+    line-height: 17px;
+}
+
+select {
+    background-color: #FFFFFF;
+    color: #404040;
+    font-family: "돋움","굴림","verdana","arial";
+    font-size: 9pt;
+}
+
+/* Background & Border Styles */
+.Background {
+    background-color: #FFFFFF
+}
+
+.BoardTable {
+    background-color: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    table-layout: fixed;
+}
+
+.ViewTable {
+    background-color: #FFFFFF;
+    border: 1px solid #C1C1C1;
+    table-layout: fixed;
+}
+
+.BoardLine {
+    background-color: #E6E6E6
+}
+
+.DivideLine {
+    background-color: #D1D1D1
+}
+
+.TitleLine {
+    background-color: #B9B9B9
+}
+
+.ReplyLine {
+    background-color: #DEDEDE
+}
+
+.PopupLine {
+    background-color: #E3E3E3
+}
+
+.PollTable {
+    background-color: #CFCFCF
+}
+
+.PollBorder {
+    background-color: #FFFFFF
+}
+
+.PollTitle {
+    background-color: #F4F4F4
+}
+
+.PollGraph {
+    background-color: #D7D7D7
+}
+
+.WriteBG {
+    background-color: #E4E4E4
+}
+
+.WritePost {
+    background-color: #FFFFFF;
+    border: 1px solid #C4CAD1
+}
+
+.CommentBG {
+    background-color: #F7F7F7
+}
+
+.EmotBorder {
+    background-color: #C4CAD1
+}
+
+.EmotBG {
+    background-color: #FFFFFF
+}
+
+.HistoryLine {
+    background-color: #CCCCCC
+}
+
+.TodayPost {
+    background-color: #FFFFFF;
+    border: 1px solid #999999
+}
+
+.ListTitle {
+    background-color: #EFEFEF
+}
+
+.SemiBorder {
+    background-color: #EFEFEF
+}
+
+.MenuBorder {
+    background-color: #999999
+}
+
+.MenuBG {
+    background-color: #FFFFFF
+}
+
+.RightBorder {
+    background-color: #CACACA
+}
+
+.RightBG {
+    background-color: #FFFFFF
+}
+
+.RightTitle {
+    background-color: #F7F7F7
+}
+
+.RightBox {
+    border: 1px solid #CDCDCD;
+    table-layout: fixed;
+}
+
+.PhotoBox {
+    border: 1px solid #E7E3E7
+}
+
+.CafeInfo {
+    background-color: #ECECEC
+}
+
+.NHN {
+    color: #006080
+}
+
+.box {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #C4CAD1;
+    font-family: "돋움","굴림","verdana","arial";
+    font-size: 9pt;
+    padding: 2px 0 0 3px
+}
+
+.tbox {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #C4CAD1;
+    font-family: "돋움","굴림","verdana","arial";
+    font-size: 9pt;
+    overflow: auto
+}
+
+.s_box {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 9pt;
+    font-family: "돋움","굴림","verdana","arial";
+    padding: 2px 0 0 3px
+}
+
+.select {
+    background-color: #FFFFFF;
+    color: #333333;
+    border: 1px solid #CCCCCC;
+    font-size: 9pt;
+}
+
+.in {
+    background-color: #FFFFFF;
+    color: #616161;
+    border: 1px solid #C4CAD1;
+    font-family: "돋움";
+    font-size: 12px;
+}
+
+/* Text Styles */
+.BoardTitleFirst {
+    color: #4AA629;
+    font-family: "돋움";
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+}
+
+.PostTitle {
+    color: #333333;
+    font-family: "돋움";
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+}
+
+.ct {
+    color: #999999;
+    font-family: "돋움";
+    font-size: 12px;
+    letter-spacing: -0.04em;
+}
+
+.eng_gray {
+    color: #9B9B9B;
+    font-family: "verdana", "arial";
+    font-size: 9px;
+}
+
+.eng_t {
+    color: #7A7A7A;
+    font-family: "tahoma", "arial";
+    font-size: 9px;
+}
+
+.HistoryYear {
+    color: #cacaca;
+    font-family: "Times New Roman","San Serif";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 32px;
+    letter-spacing: -1px
+}
+
+/* Text Links */
+.today, a.today:link, a.today:visited, a.today:hover, a.today:active {
+    color: #ffffff;
+    font-weight: normal
+}
+
+.green, a.green:link, a.green:visited, a.green:hover, a.green:active {
+    color: #3F8D1F
+}
+
+.staff, a.staff:link, a.staff:visited, a.staff:hover, a.staff:active {
+    color: #999999
+}
+
+.delete, a.delete:link, a.delete:visited, a.delete:hover, a.delete:active {
+    color: #FF0000
+}
+
+.fold, a.fold:link, a.fold:visited, a.fold:active {
+    color: #A7A7A7
+}
+
+a.fold:hover {
+    color: #787878;
+    text-decoration: none
+}
+
+a:link {
+    color: #333333;
+    text-decoration: none
+}
+
+a:visited {
+    color: #333333;
+    text-decoration: none
+}
+
+a:hover {
+    color: #999999;
+    text-decoration: underline
+}
+
+/* 공지사항 5가지 칼라 */
+.notice_yellow {
+    background-color: #FFFDEE
+}
+
+.notice_red {
+    background-color: #FFF2FA
+}
+
+.notice_blue {
+    background-color: #E8FAFD
+}
+
+.notice_green {
+    background-color: #EDF9EE
+}
+
+.notice_white {
+    background-color: #EEEEEE
+}
+
+/* Name UI */
+#menu_parent {
+    border: 1px solid #B6B6B6;
+    background-color: #fff;
+    width: 95px;
+    text-align: left;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    font-size: 1px
+}
+
+#menu_parent ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#menu_parent ul li.line {
+    height: 1px;
+    background: url(http://blogimgs.naver.com/imgs/bg_dot.gif) repeat-x
+}
+
+#menu_parent ul a {
+    color: #404040;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #fff;
+    height: 23px;
+    line-height: 23px;
+    padding-left: 10px;
+}
+
+#menu_parent ul a:hover {
+    color: #404040;
+    background-color: #e4ff75
+}
+
+/* boom */
+.bu {
+    COLOR: #EB4348;
+    FONT-SIZE: 9px;
+    FONT-FAMILY: "tahoma", "arial"
+}
+
+.bd {
+    COLOR: #496BA1;
+    FONT-SIZE: 9px;
+    FONT-FAMILY: "tahoma", "arial"
+}
+
+.bar {
+    COLOR: #B6B6B6;
+    FONT-SIZE: 9px;
+    TEXT-DECORATION: none;
+}
+
+.BoomBG {
+    background-color: #EDEDED
+}
+
+.BoomLine {
+    background-color: #d7d7d7
+}
+
+/* menu tab & Tag */
+.TabMenuOff {
+    color: #ADADAD;
+    cursor: pointer;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.TabMenuOffNew {
+    color: #ADADAD;
+    cursor: pointer;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-bottom: 2px;
+}
+
+.TabMenuOn {
+    color: #333333;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    background: url(http://cafeimgs.naver.net/img/ico_arw_don.gif) 16px 13px no-repeat;
+}
+
+.TabMenuOnNew {
+    color: #333333;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 7px;
+    padding-bottom: 2px;
+    background: url(http://cafeimgs.naver.net/img/ico_arw_don.gif) 13px 13px no-repeat;
+}
+
+a.tagfont:link {
+    color: #6D6D6D
+}
+
+a.tagfont:visited {
+    color: #6D6D6D
+}
+
+a.tagfont:hover {
+    color: #418F21
+}
+
+/* tag cloud */
+#tag {
+    color: #7C8A8D;
+    line-height: 260%;
+    letter-spacing: -1
+}
+
+#tag a:link {
+    color: #7C8A8D
+}
+
+#tag a:visited {
+    color: #7C8A8D
+}
+
+#tag a:hover {
+    background-color: #1E4F55;
+    color: #FFFF00;
+    text-decoration: none;
+    selector-dummy: expression(this.hideFocus=true)
+}
+
+#tag01 {
+    color: #00B4B5;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: -1
+}
+
+a#tag01:link {
+    color: #00B4B5;
+    font-weight: bold
+}
+
+a#tag01:visited {
+    color: #00B4B5;
+    font-weight: bold
+}
+
+a#tag01:hover {
+    background-color: #1E4F55;
+    color: #FFFF00;
+    font-weight: bold;
+    text-decoration: none;
+    selector-dummy: expression(this.hideFocus=true)
+}
+
+#tag02 {
+    color: #3D7B66;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -1
+}
+
+a#tag02:link {
+    color: #3D7B66;
+    font-weight: bold
+}
+
+a#tag02:visited {
+    color: #3D7B66;
+    font-weight: bold
+}
+
+a#tag02:hover {
+    background-color: #1E4F55;
+    color: #FFFF00;
+    font-weight: bold;
+    text-decoration: none;
+    selector-dummy: expression(this.hideFocus=true)
+}
+
+#tag03 {
+    color: #Ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: -1
+}
+
+a#tag03:link {
+    background-color: #12D763;
+    font-weight: bold;
+    color: #Ffffff;
+    text-decoration: none;
+    selector-dummy: expression(this.hideFocus=true)
+}
+
+a#tag03:visited {
+    background-color: #12D763;
+    font-weight: bold;
+    color: #Ffffff;
+    text-decoration: none;
+    selector-dummy: expression(this.hideFocus=true)
+}
+
+a#tag03:hover {
+    background-color: #1E4F55;
+    font-weight: bold;
+    color: #FFFF00;
+    text-decoration: none;
+    selector-dummy: expression(this.hideFocus=true)
+}
+
+#tagspace {
+    color: #cccccc;
+    margin: 0 6 0 4
+}
+
+#imgspace {
+    margin: 5 3 5 0
+}
+
+#tag11 {
+    font-size: 11px
+}
+
+#tag13 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #404040
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.pm0 {
+    padding: 0;
+    margin: 0;
+}
+
+.pt_3 {
+    padding-top: 3px;
+}
+
+.pl5 {
+    padding-left: 5px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.ln14 {
+    line-height: 1.4;
+}
+
+.o01 {
+    color: #FF4E02;
+}
+
+.bar {
+    color: #E2E2E2;
+    font-size: 11px;
+    padding: 0 2px;
+}
+
+.vm {
+    vertical-align: middle;
+}
+
+.checkbox {
+    margin: 0 0 1px 3px;
+}
+
+* html .checkbox {
+    margin: 0 0 3px 3px;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.tag_inp {
+    width: 540px;
+    height: 20px;
+    padding: 3px 3px 0 5px;
+    margin: 0;
+    font-size: 12px;
+}
+
+.tag_select {
+    height: 80px;
+    background: url(http://cafeimgs.naver.net/img/colorset/white/bg_tag_select.gif) repeat-x;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+* html .tag_select {
+    background-attachment: fixed;
+}
+
+.tag_select .con {
+    padding: 5px 5px 5px 10px;
+    margin: 2px 0 2px 0;
+    word-spacing: 10px;
+}
+
+.tag_select .con span {
+    cursor: pointer;
+}
+
+.tag_select .con .click {
+    color: #FFF;
+    background-color: #9A9AA4;
+}
+
+* html .scrollbar {
+    scrollbar-face-color:#F2F2F2; scrollbar-highlight-color:#FFFFFF; scrollbar-shadow-color:#F1F1F1; scrollbar-3dlight-color: #DCDCDC;
+    scrollbar-arrow-color:#CFCFCF; scrollbar-track-color:#FAFAFA; scrollbar-darkshadow-color: #DCDCDC;
+    scrollbar-base-color:#F1F1F1; }
+
+* html .scrollbar1 {
+    scrollbar-face-color:#E9E9E9; scrollbar-highlight-color:#E9E9E9; scrollbar-shadow-color:#E9E9E9; scrollbar-3dlight-color: #E9E9E9;
+    scrollbar-arrow-color:#8D8D8D; scrollbar-track-color:#FFFFFF; scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-base-color:#E9E9E9; }
+
+/* 태그 자동완성 */
+.tag_autobox {
+    width: 540px;
+    border-top: 1px #EBEBEB solid;
+    border-right: 1px #D2D2DC solid;
+    border-bottom: 1px #D2D2DC solid;
+    border-left: 1px #D2D2DC solid;
+}
+
+.tag_autobox .title {
+    background: #ECECEC;
+    margin: 0;
+    padding: 0;
+    height: 27px;
+}
+
+.tag_autobox .title h3 {
+    margin: 0;
+    padding: 8px 0 0 11px;
+    font-size: 12px;
+    color: #000;
+}
+
+.tag_autobox .title .fr {
+    padding: 7px 12px 0 0;
+    margin: 0;
+}
+
+.tag_autobox .title .fr a {
+    color: #5E5E5E
+}
+
+.tag_autobox .title .hb1,.tag_autobox .title .hb2 {
+    float: left;
+}
+
+.tag_autobox .title .hb {
+    border-left: 1px #BFBFBF solid;
+    border-right: 1px #FFFFFF solid;
+    display: block;
+    width: 0;
+    height: 12px;
+    margin: 0 7px;
+    overflow: hidden;
+    float: left;
+}
+
+* html .tag_autobox .title .hb {
+    width: 2px;
+}
+
+.tag_autobox .list {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    height: 89px;
+    background: #FFFFFF;
+}
+
+.tag_list {
+    margin: 0;
+    padding: 4px 0 0 0;
+}
+
+.tag_list li {
+    list-style-type: none;
+    padding: 0;
+    margin: 1px;
+}
+
+.tag_list li .i {
+    padding: 4px 0 1px 10px;
+    margin: 0;
+    cursor: pointer;
+    color: #000000;
+}
+
+.tag_list li span {
+    color: #ED5E00;
+}
+
+.ChatBG {
+    BACKGROUND-COLOR: #ffffff
+}
+
+.ChatLine {
+    BORDER-RIGHT: #d7eac6 1px solid;
+    BORDER-TOP: #d7eac6 1px solid;
+    BORDER-LEFT: #d7eac6 1px solid;
+    BORDER-BOTTOM: #d7eac6 1px solid
+}
+
+.ChatFont {
+    COLOR: #333333
+}
