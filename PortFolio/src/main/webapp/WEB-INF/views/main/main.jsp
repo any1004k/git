@@ -20,7 +20,7 @@
 
 <script type="text/javascript"
 		src="../resources/js/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="../resources/js/jquery.ajax-cross-origin.min.js"></script> -->
+<script type="text/javascript" src="../resources/js/jquery.ajax-cross-origin.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -44,16 +44,15 @@
 	
 			
 		$.ajax({
-				/* crossOrigin : true, */ 
+				crossOrigin : true,
 				dataType:'json',
 				url:"http://newsapi.org/v2/top-headlines?country=kr&category=business&apiKey=a7bea765d0644f279012b1e0fb7ee8a5",				
-				type:"GET",
 				success : function(data){
-					console.log(data);  
+					/* console.log(data);  */ 
 					
-					/* var object=JSON.parse(data);
-					console.log(object);  */
-					showNewsImages(data); 
+					var object=JSON.parse(data);
+					console.log(object); 
+					showNewsImages(object); 
 					
 				}		
 			});  //에이젝스 끝.
