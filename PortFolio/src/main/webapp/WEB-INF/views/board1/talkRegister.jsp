@@ -109,7 +109,7 @@
 			  
 			
 			}else{  //수정이면
-				alert("수정수정하지"+bno)
+				/* alert("수정수정하지"+bno) */
 				$(".attach_pic li,.attach_txt li").each(function(i,obj){
 					var fobj = $(obj);  //이렇게 변수로 꼭 따로 담아줘야 data 값을 뽑아낼 수 있다. 
 					

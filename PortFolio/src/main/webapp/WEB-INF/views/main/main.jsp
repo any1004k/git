@@ -38,25 +38,31 @@
 
 
 <body>
-
+	     
 	
 	<script type="text/javascript">
 	
-			
-		$.ajax({
-				crossOrigin : true,
-				dataType:'json',
-				url:"http://newsapi.org/v2/top-headlines?country=kr&category=business&apiKey=a7bea765d0644f279012b1e0fb7ee8a5",				
-				success : function(data){
-					/* console.log(data);  */ 
+ 			
+	    
+			googleNews();   
+			    
+		 	function googleNews(){	
+						$.ajax({
+							crossOrigin : true,
+					        dataType: "jsonp",
+					        url:"http://newsapi.org/v2/top-headlines?country=kr&category=business&apiKey=a7bea765d0644f279012b1e0fb7ee8a5",
+					        type: "get",
+					        success: function(data){
+					        	
+					        	var object=JSON.parse(data);
+								console.log(object);  
+								showNewsImages(object); 
+					        }
+						        
+					  	 });
+							
+					}	
 					
-					var object=JSON.parse(data);
-					console.log(object); 
-					showNewsImages(object); 
-					
-				}		
-			});  //에이젝스 끝.
-			
 			
 			
 			if("${alert}"!=""){
@@ -525,7 +531,7 @@
 
 <h3>뉴스</h3>
 <div class="menu" id="newsTabMenu">
-	<h4 id="newstab1" class="menu01 on"><a href="javascript:;" title="뉴스탭 열기">경제뉴스</a></h4>
+	<h4 id="newstab1" class="menu01 on"><a href="javascript:;" title="뉴스탭 열기">경제뉴스 </a></h4>
 
 </div>
 <div class="content type_news" id="newsContType" onfocusin="newsBox.rollingStop();" onfocusout="newsBox.rollingStart();">
